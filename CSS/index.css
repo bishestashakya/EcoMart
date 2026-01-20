@@ -1,0 +1,336 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f6f7f4;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+/*NAVBAR*/
+.Header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f7f4;
+}
+.Nav{
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    width: 50%;
+    font-size: 15px;
+}
+
+.Nav h1{
+    text-decoration: none;
+    color: #444;
+    font-size: 5px;
+    padding: 10px 15px;
+}
+.Nav img{
+    height: 100%;
+    width: 50%;
+}
+.Auth{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #2b2b2b;
+}
+.Auth a{
+    text-decoration: none;
+    color: #2b2b2b;
+}
+.Auth h1{
+    padding-right: 25px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+.Auth h1:hover{
+    cursor: pointer;
+    color: #3a5f4b;
+    text-decoration: none;
+
+}
+.Auth button{
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 2px solid #F0E8E0;
+    background-color: #0C343D;
+    cursor: pointer;
+    font-weight: bold;
+    max-width:100% ;
+    color:#2b2b2b ;
+}
+.Auth .SignIn{
+    margin-left: 10px; ;
+}
+
+.Content{
+    height: 600px;
+    width: 100%;
+    text-align: center;
+    background-color: #f6f7f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Content .left{
+    height: 100%;
+    width: 50%;
+    color: #2b2b2b;
+    text-align: left;
+    padding-left: 50px;
+    
+}
+.Content .left h1{
+    font-size: 50px;
+    padding-top: 120px;
+    font-family: 'Playfair Display', serif;
+
+}
+.Content .left button{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    background-color: #5f8f7a;
+    cursor: pointer;
+    color:#F3EFEA ;
+    margin-top: 50px;
+    border: none;
+    border-radius: 5px;
+}
+
+.Content .left button:hover{
+    background-color: #3a5f4b;
+}
+
+.Content .right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+}
+.sliderWrapper{
+    position: relative;
+    max-width: 700px;
+    margin-right: 40px;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 15px 30px -0.75 hsla(0,0%,0%,0.25);
+    border-radius: 10px;
+    scrollbar-width: none;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.SliderNav{
+    display: flex;
+    column-gap: 15px;
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.SliderNav a{
+    width:  10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease  250ms;   
+}
+.SliderNav a:hover{
+    opacity: 1;
+}
+
+.body{
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: #e7ebe6 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.body h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.body p{
+    font-size: 19px;
+    color: black;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.heading{
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f7f4 ; 
+    color: #2b2b2b;
+}
+.heading h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+.features{
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    background-color: #f6f7f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.features a{
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #1E3A38;
+    text-decoration: none;
+
+}
+.features .feature1{
+    height: 60px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 15px;
+    background-color: white;
+    border: 1px solid #174717;
+}
+.features .feature2{
+    height: 60px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 15px;
+    background-color: white;
+    border: 1px solid #174717;
+}
+.footer{
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    background: #e7ebe6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2b2b2b;
+    gap: 100px;
+}
+.footer .left1{
+    height: 80%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .left1 img{
+    height: 230px;
+    width: auto;
+    padding-bottom: 20px;
+}
+.footer .middle{
+    height: 60%;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.footer .middle p{
+    padding-top: 230px;
+    font-size: 12px;
+
+}
+.footer .right{
+    height: 80%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    
+}
+.right .text{
+    height: 30%;
+    width: 100%;
+    padding-top: 30px;
+    font-size: 20px;
+    gap: 40px;
+    text-align: center;
+}
+.right .text h2{
+    padding-top: 20px;
+    font-family: 'Playfair Display', serif;
+}
+.right .links{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.right .links a{
+    text-decoration: none;
+    color: #555;
+    font-size: 18px; 
+}   
+.right .social-media{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.right .social-media a{
+    text-decoration: none;
+    color: #2b2b2b; 
+    font-size: 18px; 
+    gap: 20px;
+}
+.line{
+    height: 25px;
+    width: 100%;
+}
